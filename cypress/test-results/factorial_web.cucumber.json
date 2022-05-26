@@ -1,0 +1,253 @@
+[
+  {
+    "description": "   Calculate factorial from webpage",
+    "keyword": "Feature",
+    "name": "Web Calculate factorial",
+    "line": 1,
+    "id": "web-calculate-factorial",
+    "tags": [],
+    "uri": "factorial_web.feature",
+    "elements": [
+      {
+        "id": "web-calculate-factorial;calculate-web-factorial-valid-numbers",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Calculate web factorial valid numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit factorial web",
+            "result": {
+              "status": "passed",
+              "duration": 1570000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I calculate factorial for the number '0'",
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see factorial result '1'",
+            "result": {
+              "status": "passed",
+              "duration": 102000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "web-calculate-factorial;calculate-web-factorial-valid-numbers",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Calculate web factorial valid numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit factorial web",
+            "result": {
+              "status": "passed",
+              "duration": 353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I calculate factorial for the number '200'",
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see factorial result '788657867364790503552363213932185062295135977687173263294742533244359449963403342920304284011984623904177212138919638830257642790242637105061926624952829931113462857270763317237396988943922445621451664240254033291864131227428294853277524242407573903240321257405579568660226031904170324062351700858796178922222789623703897374720000000000000000000000000000000000000000000000000'",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '788657867364790503552363213932185062295135977687173263294742533244359449963403342920304284011984623904177212138919638830257642790242637105061926624952829931113462857270763317237396988943922445621451664240254033291864131227428294853277524242407573903240321257405579568660226031904170324062351700858796178922222789623703897374720000000000000000000000000000000000000000000000000' within the element: <p#resultDiv.text-center.top-space-20> but never did.\n    at FactorialPage.assertFactorialMessage (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:172:28)\n    at Context.eval (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:202:17)\n    at Context.resolveAndRunStepDefinition (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:10682:29)\n    at Context.eval (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:10003:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "web-calculate-factorial;calculate-web-factorial-invalid-numbers",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Calculate web factorial invalid numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit factorial web",
+            "result": {
+              "status": "passed",
+              "duration": 431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I calculate factorial for the number '-3'",
+            "result": {
+              "status": "passed",
+              "duration": 441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see factorial error message",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Please enter an integer' within the element: <p#resultDiv.text-center.top-space-20> but never did.\n    at FactorialPage.assertFactorialMessage (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:172:28)\n    at FactorialPage.assertFactorialErrorMessage (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:166:12)\n    at Context.eval (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:205:17)\n    at Context.resolveAndRunStepDefinition (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:10682:29)\n    at Context.eval (http://qainterview.pythonanywhere.com/__cypress/tests?p=cypress/integration/factorial_web.feature:10003:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "web-calculate-factorial;calculate-web-factorial-invalid-numbers",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Calculate web factorial invalid numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit factorial web",
+            "result": {
+              "status": "passed",
+              "duration": 377000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I calculate factorial for the number 'a'",
+            "result": {
+              "status": "passed",
+              "duration": 340000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see factorial error message",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "web-calculate-factorial;calculate-web-factorial-invalid-numbers",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Calculate web factorial invalid numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit factorial web",
+            "result": {
+              "status": "passed",
+              "duration": 323000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I calculate factorial for the number '1.5'",
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see factorial error message",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "web-calculate-factorial;calculate-web-factorial-empty-number",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Calculate web factorial empty number",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit factorial web",
+            "result": {
+              "status": "passed",
+              "duration": 385000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I press calculate factorial button",
+            "result": {
+              "status": "passed",
+              "duration": 186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see factorial error message",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -4,8 +4,14 @@ export class FactorialPage {
   //calculate Factorial
   calculateFactorial(num){
     cy.get("#number").type(num);
-    cy.get("#getFactorial").click();
+    this.pressCalculateFactorialButton();
   }
+
+//press calculate factorial button
+pressCalculateFactorialButton(){
+  cy.get("#getFactorial").click();
+}
+
 //assert error response of factorial when introduce invalid value
 assertFactorialErrorMessage(){
   var errorMessage = "Please enter an integer";

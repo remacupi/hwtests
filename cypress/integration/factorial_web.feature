@@ -24,4 +24,4 @@ Scenario Outline: Calculate web factorial invalid numbers
 
 Scenario: Calculate web factorial empty number
     When I press calculate factorial button
-    hen I should see factorial error message
+    Then I should see factorial error message
