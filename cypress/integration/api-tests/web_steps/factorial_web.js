@@ -9,9 +9,13 @@ Given('I visit factorial web',()=>{
   cy.visit('/');
 })
 
-//POST STEPS
+//FACTORIAL WEB STEPS
 When(`I calculate factorial for the number {string}`,(number)=>{
   factorialPage.calculateFactorial(number);
+})
+
+When(`I press calculate factorial button`,()=>{
+  factorialPage.pressCalculateFactorialButton();
 })
 
 //ASSERT STEPS

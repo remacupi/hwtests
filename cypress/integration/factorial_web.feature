@@ -20,3 +20,8 @@ Scenario Outline: Calculate web factorial invalid numbers
       |   number        |
       |   -3            |
       |    a            |
+      |    1.5          |
+
+Scenario: Calculate web factorial empty number
+    When I press calculate factorial button
+    hen I should see factorial error message

@@ -15,6 +15,12 @@
     "cypress-intercept-formdata": "^0.4.0"
   },
   "cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/integration/**/"
+    "step_definitions": "cypress/integration/**/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
