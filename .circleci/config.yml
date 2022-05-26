@@ -23,8 +23,8 @@ jobs:
           paths:
             - ~/.npm
             - ~/.cache
-      - run: $(npm bin)/cypress run
-      - store_test_results:
-          path: ~/repo/cypress/cucumber/
+      - run: $(npm bin)/cypress run --record --key 9dd1d33d-bbcb-45a5-a310-e0083dd45974
       - store_artifacts:
           path: ~/repo/cypress/videos/
+      - store_artifacts:
+          path: ~/repo/cypress/screenshots/

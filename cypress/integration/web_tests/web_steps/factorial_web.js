@@ -1,5 +1,5 @@
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
-import {FactorialPage} from "../page-objects/factorial_page";
+import {FactorialPage} from "../page_objects/factorial_page";
 
 var factorialPage = new FactorialPage();
 

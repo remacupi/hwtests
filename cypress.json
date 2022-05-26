@@ -1,9 +1,11 @@
 {
   "baseUrl": "http://qainterview.pythonanywhere.com/",
   "testFiles": "*.feature",
+  "projectId": "ubfrjq",
   "ignoreTestFiles": [
     "*.js",
     "*.ts",
     "*.md"
-  ]
+  ],
+  "projectId": "ubfrjq"
 }

@@ -1,6 +1,6 @@
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps"
-import {PostFactorialApi} from "../api-objects/post_factorial_api";
-import {AssertApi} from "../api-objects/assert_api";
+import {PostFactorialApi} from "../api_objects/post_factorial_api";
+import {AssertApi} from "../api_objects/assert_api";
 
 var postFactorialApi = new PostFactorialApi();
 var assertApi = new AssertApi();

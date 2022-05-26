@@ -14,7 +14,7 @@ Scenario Outline: POST factorial valid numbers
 
 Scenario Outline: POST factorial invalid numbers
       When I POST factorial for number '<number>'
-      Then I should see response code '400'
+      Then I should see response code '422'
       Examples:
         |   number        |
         |   .             |

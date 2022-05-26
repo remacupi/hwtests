@@ -1,6 +1,5 @@
 export class FactorialPage {
 
-
   //calculate Factorial
   calculateFactorial(num){
     cy.get("#number").type(num);
